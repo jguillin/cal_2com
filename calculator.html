@@ -1,17 +1,41 @@
-<!DOCTYPE html><html><head>
-<title>Calculator</title><meta charset="utf-8">
-<script type="text/javascript">
+<!DOCTYPE html>
+<html>
+	<head>
 
-function inverse() {
-  var num = document.getElementById("n1");
-  num.value = 1/num.value;
-}
-</script>
-</head>
-<body>
-  Number:
-  <input type="text" id="n1"><p>
+		<title>Calculator</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function inverse() { var num1 = document.getElementById("n1"); num1.value = 1/num1.value;
+			}
+			function square() { var num2 = document.getElementById("n2"); num2.value = num2.value * num2.value;
+			}
+		</script>
+		<style type="text/css">
+			h1{ color: #5DADE2; 
 
-  <button onclick="inverse()"> 1/x </button>
-</body>
+			}
+			h2{ color: #82E0AA;
+
+			}
+			button{
+				color: #FDFEFE; border-radius: 5px; background-color: #16A085; border-color: #FDFEFE;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<h1>Jimmy Guillin Camacho</h1> 
+
+		<h2>Number 1:</h2>
+		<p><input type="text" id="n1"></p>
+		<button onclick="inverse()"><strong> 1/x </strong></button>
+		<br/><br/><br/>
+	  	
+	  	<h2>Number 2:</h2>
+		<p><input type="text" id="n2"></p>
+		<button onclick="square()"><strong> x<sup>2</sup> </strong></button>
+
+	</body>
 </html>
